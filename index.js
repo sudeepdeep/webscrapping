@@ -3,7 +3,7 @@ const express = require('express')
 
 const app = express()
 
-app.get('/',(req, res) => {
+app.get('/getTimeStories',(req, res) => {
     console.log("Please Wait... Processing The Data!!")
     let webscrapping = async (url) => {
         var browser = await puppeteer.launch()
